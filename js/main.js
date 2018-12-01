@@ -28,6 +28,9 @@ function setColor(elVal) {
     case "pink":
       document.body.style.backgroundColor = 'pink';
       break;
+    case "blue":
+      document.body.style.backgroundColor = 'blue';
+      break;
     default:
       document.body.style.backgroundColor = 'white';
       break;
