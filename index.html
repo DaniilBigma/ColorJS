@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <select id="list">
+      <option value="default">Change color</option>
+      <option value="gray">gray</option>
+      <option value="yellow">Yellow</option>
+      <option value="pink">Pink</option>
+    </select>
+    <div id="title">
+      <h1>Hi! I'm using JavaScript!</h1>
+      <p>Today is: <span id="today"></span></p>
+    </div>
+    <form id="form">
+      <input type="submit">
+    </form>
+    <p id="clock"></p>
+    <p id="demo">X coords: 0, Y coords: 0</p>
+
+    <input id="stoptime" type="button" value="Stop time">
+    <input type="checkbox" name="" class="checkbox" onclick="changeCheckbox(this)" checked >
+    <input type="checkbox" name="" class="checkbox" onclick="changeCheckbox(this)" >
+    <input type="checkbox" name="" class="checkbox" onclick="changeCheckbox(this)" >
+    <input type="checkbox" name="" class="checkbox" onclick="changeCheckbox(this)" >
+  </div>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
