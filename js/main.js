@@ -67,12 +67,11 @@ function checkCookie() {
 
 function today() {
   let date = new Date(),
-    day = date.getDay(),
     elSpan = document.getElementById("today");
 
   const days = ["Monday", "Tuesday", "Wensday", "Thursday", "Friday", "Saturday", "Sunday"];
 
-  elSpan.innerHTML = days[day - 1];
+  elSpan.innerHTML = days[date.getDay() - 1];
 };
 
 let form = document.getElementById("form");
@@ -113,7 +112,7 @@ function stoptime () {
 function changeCheckbox(obj) {
   var checkbox = document.getElementsByClassName("checkbox");
   for (var i=0; checkbox.length > i; i++) {
-    checkbox[i].checked = false
+    checkbox[i].checked = false;
   }
   obj.checked = true;
 }
