@@ -1,15 +1,8 @@
-$(function () {
-
-});
-
 let elVal = document.getElementById("list");
-//
 
 document.onload = checkCookie();
 elVal.addEventListener("change", selEl);
 document.onload = today();
-
-//console.log(elVal);
 
 function selEl() {
   let elVal = document.getElementById("list").value;
