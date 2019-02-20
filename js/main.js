@@ -1,3 +1,4 @@
+const days = ["Monday", "Tuesday", "Wensday", "Thursday", "Friday", "Saturday", "Sunday"];
 let elVal = document.getElementById("list");
 
 document.onload = checkCookie();
@@ -59,12 +60,8 @@ function checkCookie() {
 }
 
 function today() {
-  let date = new Date(),
-    elSpan = document.getElementById("today");
-
-  const days = ["Monday", "Tuesday", "Wensday", "Thursday", "Friday", "Saturday", "Sunday"];
-
-  elSpan.innerHTML = days[date.getDay() - 1];
+  let elSpan = document.getElementById("today");
+  elSpan.innerHTML = days[new Date().getDay() - 1];
 };
 
 let form = document.getElementById("form");
