@@ -62,29 +62,29 @@ function checkCookie() {
 function today() {
   let elSpan = document.getElementById("today");
   elSpan.innerHTML = days[new Date().getDay() - 1];
-};
+}
 
 let form = document.getElementById("form");
 
 form.onsubmit = function () {
   alert("Hello!");
   return false;
-};
+}
 
 document.body.addEventListener("mousemove", mouse, event);
 
 function mouse(e) {
-  let x = e.screenX;
-  let y = e.screenY;
+  let x = e.screenX,
+      y = e.screenY;
   let coor = "X coords: " + x + ", Y coords: " + y;
   document.getElementById("demo").innerHTML = coor;
 }
 
 let clock = setInterval(function () {
-  let date = new Date();
-  let hh = date.getHours();
-  let mm = date.getMinutes();
-  let ss = date.getSeconds();
+  let date = new Date(),
+      hh = date.getHours(),
+      mm = date.getMinutes(),
+      ss = date.getSeconds();
   let clockElement = document.getElementById("clock");
   if (hh <= 9) hh = "0" + hh;
   if (mm <= 9) mm = "0" + mm;
@@ -100,7 +100,7 @@ function stoptime () {
 }
 
 function changeCheckbox(obj) {
-  var checkbox = document.getElementsByClassName("checkbox");
+  let checkbox = document.getElementsByClassName("checkbox");
   for (var i=0; checkbox.length > i; i++) {
     checkbox[i].checked = false;
   }
